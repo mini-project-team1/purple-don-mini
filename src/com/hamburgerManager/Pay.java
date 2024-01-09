@@ -1,6 +1,7 @@
 package com.hamburgerManager;
 
 public class Pay {
+
     private String burgername;
     public static int price = 0;
 

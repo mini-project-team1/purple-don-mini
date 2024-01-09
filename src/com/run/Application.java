@@ -2,6 +2,8 @@ package com.run;
 
 import com.hamburgerManager.Controller;
 
+import com.hamburgerManager.Member;
+
 public class Application {
 
 

@@ -1,5 +1,6 @@
 package com.hamburgerManager;
 
+
 import com.hamburgerManage.View.burgerView;
 
 import java.util.Scanner;
@@ -30,4 +31,3 @@ public class Controller {
         }while(c != 9);
 
     }
-}
