@@ -1,11 +1,15 @@
 package com.run;
 
 import com.hamburgerManager.Controller;
+
 import com.hamburgerManager.Member;
 
 public class Application {
 
+
+
     public static void main(String[] args) {
+
 
 
          /*버거메뉴
@@ -32,10 +36,8 @@ public class Application {
         * 회원번호입력, 맞으면 회원으로 넘어가서 바로 쿠폰 적용
         * 비회원 일때 가입여부 묻기
         * 비회원일때, 회원가입창으로 바로 넘어가기*/
-
-        Controller controller = new Controller();
-        controller.mainMenu();
-
+        Controller controllermenu = new Controller();
+        controllermenu.mainMenu();
     }
 
 }
