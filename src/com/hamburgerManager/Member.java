@@ -1,17 +1,19 @@
 package com.hamburgerManager;
 
+import com.hamburgerManage.Dto.memberDTO;
+
 import java.util.Scanner;
 
-public class member {
+public class Member {
     Scanner sc = new Scanner(System.in);
-    MemberDTO[] memberList = new MemberDTO[30];
+    memberDTO[] memberList = new memberDTO[30];
 
     {
-        memberList[0] = new MemberDTO("김정희", "01011112222");
-        memberList[1] = new MemberDTO("이후영", "01055556666");
-        memberList[2] = new MemberDTO("이수민", "01077778888");
-        memberList[3] = new MemberDTO("우리조", "01099998888");
-        memberList[4] = new MemberDTO("박수쳐", "01012345678");
+        memberList[0] = new memberDTO("김정희", "01011112222");
+        memberList[1] = new memberDTO("이후영", "01055556666");
+        memberList[2] = new memberDTO("이수민", "01077778888");
+        memberList[3] = new memberDTO("우리조", "01099998888");
+        memberList[4] = new memberDTO("박수쳐", "01012345678");
     }
 
     int index = 5;
@@ -20,7 +22,7 @@ public class member {
         System.out.print("회원 / 비회원을 조회합니다. 성함을 입력하세요 : ");
         String insertName = sc.nextLine();
 
-        for (MemberDTO mem : memberList) {
+        for (memberDTO mem : memberList) {
 
             if(mem==null) {
                 break;
@@ -60,7 +62,7 @@ public class member {
         System.out.print("휴대폰 번호를 입력하세요 : ");
         String newPhone = sc.nextLine();
 
-        memberList[index] = new MemberDTO(newName, newPhone);
+        memberList[index] = new memberDTO(newName, newPhone);
         System.out.println(memberList[index].memberInformation());
 
         System.out.println(newName + "님, 회원 가입이 완료되었습니다.");

@@ -5,9 +5,9 @@ public class memberDTO {
     private String name;    // 회원 이름
     private String phone;   // 휴대폰 번호
 
-    public MemberDTO() {}
+    public memberDTO() {}
 
-    public MemberDTO(String name, String phone) {
+    public memberDTO(String name, String phone) {
         this.name = name;
         this.phone = phone;
     }
