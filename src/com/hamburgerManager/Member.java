@@ -5,6 +5,8 @@ import com.hamburgerManage.Dto.memberDTO;
 import java.util.Scanner;
 
 public class Member {
+
+    payView payview = new payView();
     Scanner sc = new Scanner(System.in);
     memberDTO[] memberList = new memberDTO[30];
 
@@ -18,7 +20,7 @@ public class Member {
 
     int index = 5;
 
-    public void chooseList() {
+    public void chooseListSingle() {
         System.out.print("회원 / 비회원을 조회합니다. 성함을 입력하세요 : ");
         String insertName = sc.nextLine();
 
@@ -32,7 +34,8 @@ public class Member {
 
                 System.out.println(mem.memberInformation());
                 System.out.println(mem.getName() + "님, 안녕하세요! 회원 전용 1주년 할인 쿠폰이 발급되었습니다. 결제를 진행해주세요.");
-                return;
+                payview.singleMemberPay();
+                break;
             }
 
         }
@@ -43,10 +46,47 @@ public class Member {
         if (str.equals("Y")) {
 
             regist();
+            payview.singleMemberPay();
 
         } else {
             System.out.println("비회원으로 결제를 진행합니다.");
+            payview.singleMemberPay();
 
+        }
+
+    }
+
+    public void chooseListSet() {
+        System.out.print("회원 / 비회원을 조회합니다. 성함을 입력하세요 : ");
+        String insertName = sc.nextLine();
+
+        for (memberDTO mem : memberList) {
+
+            if(mem==null) {
+                break;
+            }
+
+            if (mem.getName().equals(insertName)) {
+
+                System.out.println(mem.memberInformation());
+                System.out.println(mem.getName() + "님, 안녕하세요! 회원 전용 1주년 할인 쿠폰이 발급되었습니다. 결제를 진행해주세요.");
+                payview.singleMemberPay();
+                break;
+            }
+
+        }
+
+        System.out.print("등록되지 않은 성함입니다. 현재 회원 전용 1주년 할인 쿠폰 증정이벤트 진행중입니다. 회원 가입 하시겠습니까? : (Y / N) ");
+        String str = sc.nextLine().toUpperCase();
+
+        if (str.equals("Y")) {
+
+            regist();
+            payview.singleMemberPay();
+
+        } else {
+            System.out.println("비회원으로 결제를 진행합니다.");
+            payview.singleMemberPay();
         }
 
     }

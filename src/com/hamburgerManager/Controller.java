@@ -18,16 +18,22 @@ public class Controller {
             System.out.println(" 9. 프로그램 종료");
             System.out.print("메뉴번호를 입력하세요 : ");
             c = sc.nextInt();
-            switch (c){
-                case 1 : BURGERVIEW.burgurview(); break;
+            switch (c) {
+                case 1:
+                    BURGERVIEW.burgurview();
+                    break;
                 //
 
 //                case 2 : BURGERVIEW.burgurview(); break;
 
-                case 9 : System.out.println("프로그램 종료"); break;
-                default: System.out.println("다시 입력해주세요");
+                case 9:
+                    System.out.println("프로그램 종료");
+                    break;
+                default:
+                    System.out.println("다시 입력해주세요");
             }
 
-        }while(c != 9);
+        } while (c != 9);
 
     }
+}
