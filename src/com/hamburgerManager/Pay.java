@@ -1,4 +1,4 @@
 package com.hamburgerManager;
 
-public class controller {
+public class Pay {
 }

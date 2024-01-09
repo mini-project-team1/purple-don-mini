@@ -22,6 +22,6 @@ public class menuDTO {
     private int wedgePotato = 3400;         // 웨지포테이토
     private int squidRing = 1500;           // 오징어링
 
-    public MenuDTO() {}
+    public menuDTO() {}
 
 }
