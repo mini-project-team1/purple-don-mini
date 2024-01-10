@@ -2,15 +2,15 @@ package com.hamburgerManager;
 
 
 import com.hamburgerManage.View.burgerView;
-import com.hamburgerManage.View.drinkView;
-import com.hamburgerManage.View.sideView;
+import com.hamburgerManage.View.setView;
+
 
 import java.util.Scanner;
 
 public class Controller {
+   setView SETVIEW= new setView();
     burgerView BURGERVIEW = new burgerView();
-    drinkView drinkView = new drinkView();
-    sideView sideView = new sideView();
+
 
 
 
@@ -29,7 +29,10 @@ public class Controller {
                     BURGERVIEW.burgurview();
                     break;
                 case 2:
-                    BURGERVIEW.burgurviewset();
+                    SETVIEW.burgurviewset();
+                    SETVIEW.drinkview();
+                    SETVIEW.sideview();
+
                     break;
                 case 9:
                     System.out.println("프로그램 종료");
