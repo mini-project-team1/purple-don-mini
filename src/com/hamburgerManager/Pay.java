@@ -15,25 +15,21 @@ public class Pay {
         this.burgername =burgername;
 
         if(single == true){
-                member.chooseListSingle();
+            member.chooseListSingle();
 
-        }else{ member.chooseListSet();
+        }else{
+            member.chooseListSet();
         }
     }
+  
     public void DRINKNAME(String drinkname) {
         this.drinkname = drinkname;
-
-
-
 
 
     }
 
     public void SIDENAME(String sidename) {
         this.sidename= sidename;
-
-
-
 
 
     }
@@ -44,8 +40,6 @@ public class Pay {
         return "선택하신 메뉴는"+this.burgername+this.drinkname+this.sidename+"입니다.";
 
     }
-
-
 
 
 }
