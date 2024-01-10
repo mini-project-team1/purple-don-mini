@@ -3,6 +3,10 @@ package com.hamburgerManager;
 public class Pay {
 
     private String burgername;
+    private String drinkname;
+    private String sidename;
+
+
     public static int price = 0;
 
     Member member = new Member();
@@ -11,26 +15,13 @@ public class Pay {
         this.burgername =burgername;
 
         if(single == true){
-                member.chooseList();
-                singleNoMemberPay();
+                member.chooseListSingle();
 
-
-
-
-
-
-        }else{
-
-
-
+        }else{ member.chooseListSet();
         }
-
-
-
-
-
     }
     public void DRINKNAME(String drinkname) {
+        this.drinkname = drinkname;
 
 
 
@@ -39,6 +30,7 @@ public class Pay {
     }
 
     public void SIDENAME(String sidename) {
+        this.sidename= sidename;
 
 
 
@@ -46,19 +38,14 @@ public class Pay {
 
     }
 
-    public void singleNoMemberPay(){
-        System.out.println("총금액은" +price + "원 입니다.");
-        price=0;
-        System.out.println("최종 결제 완료되었습니다.");
+    public String setInformation (){
+
+
+        return "선택하신 메뉴는"+this.burgername+this.drinkname+this.sidename+"입니다.";
 
     }
 
-    public void singleMemberPay(){
-        int coupon =(int) (Math.random()*6 + 5);
-        System.out.println("총금액은" + ( price /100 *(100-coupon))  + "원 입니다.");
-        price=0;
-        System.out.println("최종 결제 완료되었습니다.");
 
-    }
+
 
 }

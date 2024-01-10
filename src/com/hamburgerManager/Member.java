@@ -4,7 +4,11 @@ import com.hamburgerManage.Dto.memberDTO;
 
 import java.util.Scanner;
 
+import static com.hamburgerManager.Pay.price;
+
 public class Member {
+
+    payView payview = new payView();
     Scanner sc = new Scanner(System.in);
     memberDTO[] memberList = new memberDTO[30];
 
@@ -18,7 +22,38 @@ public class Member {
 
     int index = 5;
 
-    public void chooseList() {
+    public void chooseListSingle() {
+        System.out.println("회원검증을 시작합니다.");
+        System.out.println("이름을 입력해주세요 ");
+        String str = sc.nextLine();
+        for (memberDTO marr : memberList){
+
+            if(marr==null){
+                System.out.println("일치하는 맴버가 없습니다.");
+                regist();
+                payview.singleMemberPay();
+                return;
+            }
+
+            if(marr.getName().equals(str)){
+                System.out.println("회원인증에 성공하였습니다.");
+                payview.singleMemberPay();
+                return;
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+    public void chooseListSet() {
         System.out.print("회원 / 비회원을 조회합니다. 성함을 입력하세요 : ");
         String insertName = sc.nextLine();
 
@@ -26,14 +61,19 @@ public class Member {
 
             if(mem==null) {
                 break;
+
+
+            }else {
+                if (mem.getName().equals(insertName)) {
+
+                    System.out.println(mem.memberInformation());
+                    System.out.println(mem.getName() + "님, 안녕하세요! 회원 전용 1주년 할인 쿠폰이 발급되었습니다. 결제를 진행해주세요.");
+                    payview.singleMemberPay();
+                    break;
+                }
             }
 
-            if (mem.getName().equals(insertName)) {
 
-                System.out.println(mem.memberInformation());
-                System.out.println(mem.getName() + "님, 안녕하세요! 회원 전용 1주년 할인 쿠폰이 발급되었습니다. 결제를 진행해주세요.");
-                return;
-            }
 
         }
 
@@ -43,10 +83,11 @@ public class Member {
         if (str.equals("Y")) {
 
             regist();
+            payview.singleMemberPay();
 
         } else {
             System.out.println("비회원으로 결제를 진행합니다.");
-
+            payview.singleMemberPay();
         }
 
     }
