@@ -30,8 +30,9 @@ public class payView {
 
     public void setMemberPay(){
         int coupon =(int) (Math.random()*6 + 5);
+        int setFinalPay = ( price /100 *(100-coupon));
         System.out.println("1주년 회원가입 이벤트로 5%~10% 회원쿠폰 적용되었습니다.");
-        System.out.println("총금액은" + ( price /100 *(100-coupon))  + "원 입니다.");
+        System.out.println("총금액은" + (setFinalPay-1000)  + "원 입니다.");
         price=0;
         System.out.println("최종 결제 완료되었습니다.");
 

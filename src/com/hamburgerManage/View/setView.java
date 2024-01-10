@@ -27,28 +27,28 @@ public class setView {
                 Pay.price += 5000;
                 System.out.println("치즈버거를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
-                pay.BURGERNAME("치즈버거",false);
+                this.burgername = "치즈버거";
 
                 break;
             case 2 : Pay.price += 6000;
                 System.out.println("불고기버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
-                pay.BURGERNAME("불고기버거",false);
+                this.burgername = "불고기버거";
                 break;
             case 3 : Pay.price += 7000;
                 System.out.println("새우버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
-                pay.BURGERNAME("새우버거",false);
+                this.burgername = "새우버거";
                 break;
             case 4 : Pay.price += 8000;
                 System.out.println("핫크리스피버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
-                pay.BURGERNAME("핫크리스피버거",false);
+                this.burgername = "핫크리스피버거";
                 break;
             case 5 : Pay.price += 9000;
                 System.out.println("한우버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
-                pay.BURGERNAME("한우버거",false);
+                this.burgername = "한우 버거,";
                 break;
             default:
                 System.out.println("알맞은 메뉴를 선택해주세요 : "); break;
@@ -162,9 +162,11 @@ public class setView {
     public String setInformation (){
 
 
-        return "선택하신 메뉴는"+this.burgername+this.drinkname+this.sidename+"입니다.";
+        return "선택하신 메뉴는"+this.burgername+", "+this.drinkname+", "+this.sidename+"입니다.";
 
     }
+
+
 
 
 
