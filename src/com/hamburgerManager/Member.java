@@ -66,7 +66,7 @@ public class Member {
             }
 
             if(marr.getName().equals(str)){
-                System.out.println("회원 인증에 성공하였습니다.");
+                System.out.println("회원 인증에 성공하였습니다. 😍");
                 payview.setMemberPay();
                 return;
             }
@@ -94,7 +94,7 @@ public class Member {
         memberList[index] = new memberDTO(newName, newPhone);
         System.out.println(memberList[index].memberInformation());
 
-        System.out.println(newName + "님, 회원 가입이 완료되었습니다.");
+        System.out.println(newName + "님, 회원 가입이 완료되었습니다. 🎶");
         index++;
 
     }
