@@ -52,37 +52,31 @@ public class Member {
     }
 
     public void chooseListSet() {
-        System.out.print("회원 / 비회원을 조회합니다. 성함을 입력하세요 : ");
-        String insertName = sc.nextLine();
 
-        for (memberDTO mem : memberList) {
+        System.out.println("회원검증을 시작합니다.");
+        System.out.println("이름을 입력해주세요 ");
+        String str = sc.nextLine();
+        for (memberDTO marr : memberList){
 
-            if(mem==null) {
-                break;
+            if(marr==null){
+                System.out.println("일치하는 맴버가 없습니다.");
+                regist();
+                payview.setMemberPay();
+                return;
             }
 
-            if (mem.getName().equals(insertName)) {
-
-                System.out.println(mem.memberInformation());
-                System.out.println(mem.getName() + "님, 안녕하세요! 회원 전용 1주년 할인 쿠폰이 발급되었습니다. 결제를 진행해주세요.");
-                payview.singleMemberPay();
-                break;
+            if(marr.getName().equals(str)){
+                System.out.println("회원인증에 성공하였습니다.");
+                payview.setMemberPay();
+                return;
             }
+
+
 
         }
 
-        System.out.print("등록되지 않은 성함입니다. 현재 회원 전용 1주년 할인 쿠폰 증정이벤트 진행중입니다. 회원 가입 하시겠습니까? : (Y / N) ");
-        String str = sc.nextLine().toUpperCase();
 
-        if (str.equals("Y")) {
 
-            regist();
-            payview.singleMemberPay();
-
-        } else {
-            System.out.println("비회원으로 결제를 진행합니다.");
-            payview.singleMemberPay();
-        }
 
     }
 
