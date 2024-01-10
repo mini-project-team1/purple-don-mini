@@ -59,7 +59,6 @@ public class burgerView {
 
     }
 
-
     public void burgurviewset() {
 
         Scanner sc = new Scanner(System.in);
