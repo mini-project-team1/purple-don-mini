@@ -16,14 +16,6 @@ public class Pay {
 
         if(single == true){
             member.chooseListSingle();
-
-        }else{
-
-
-
-
-
-
         }
     }
   

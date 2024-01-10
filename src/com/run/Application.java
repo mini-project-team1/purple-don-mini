@@ -4,7 +4,7 @@ import com.hamburgerManager.Controller;
 
 import com.hamburgerManager.Member;
 
-public class Application {
+public class  Application {
 
 
 

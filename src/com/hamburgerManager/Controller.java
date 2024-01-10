@@ -44,7 +44,7 @@ public class Controller {
                     System.out.println("프로그램 종료");
                     break;
                 default:
-                    System.out.println("다시 입력해주세요");
+                    System.out.print("다시 입력해주세요 : ");
             }
 
         } while (c != 9);

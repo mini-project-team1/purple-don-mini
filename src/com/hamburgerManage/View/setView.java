@@ -13,12 +13,12 @@ public class setView {
     public void burgurviewset() {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("1. 치즈버거");
-        System.out.println("2. 불고기버거");
-        System.out.println("3. 새우버거");
-        System.out.println("4. 핫크리스피버거");
-        System.out.println("5. 한우버거");
-        System.out.println("햄버거를 선택해주세요 : ");
+        System.out.println("1. 치즈버거 5000원");
+        System.out.println("2. 불고기버거 6000원");
+        System.out.println("3. 새우버거 7000원");
+        System.out.println("4. 핫크리스피버거 8000원");
+        System.out.println("5. 한우버거 9000원");
+        System.out.print("햄버거를 선택해주세요 : ");
         int c = sc.nextInt();
         sc.nextLine();
 
@@ -51,7 +51,7 @@ public class setView {
                 this.burgername = "한우 버거,";
                 break;
             default:
-                System.out.println("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
         }
 
     }
@@ -59,12 +59,12 @@ public class setView {
     public void sideview() {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("1. 치즈스틱");
-        System.out.println("2. 양념감자");
-        System.out.println("3. 코울슬로");
-        System.out.println("4. 웨지포테이토");
-        System.out.println("5. 오징어링");
-        System.out.println("사이드 메뉴를 선택해주세요 : ");
+        System.out.println("1. 치즈스틱 1300원");
+        System.out.println("2. 양념감자 3000원");
+        System.out.println("3. 코울슬로 3800원");
+        System.out.println("4. 웨지 포테이토 3400원");
+        System.out.println("5. 오징어링 1500원");
+        System.out.print("사이드 메뉴를 선택해주세요 : ");
         int c = sc.nextInt();
         sc.nextLine();
 
@@ -89,17 +89,17 @@ public class setView {
                 this.sidename = "코울슬로";
                 break;
             case 4 : Pay.price += 3400;
-                System.out.println("웨지포테이토를 선택하셨습니다.");
+                System.out.println("웨지 포테이토를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
-                this.sidename = "웨지포테이토";
+                this.sidename = "웨지 포테이토";
                 break;
             case 5 : Pay.price += 1500;
-                System.out.println("오징어릴을 선택하셨습니다.");
+                System.out.println("오징어링을 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.sidename = "오징어링";
                 break;
             default:
-                System.out.println("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
 
         }
 
@@ -112,11 +112,11 @@ public class setView {
     public void drinkview() {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("1. 콜라");
-        System.out.println("2. 사이다");
-        System.out.println("3. 제로콜라");
-        System.out.println("4. 환타");
-        System.out.print("알맞은 메뉴를 골라주세요");
+        System.out.println("1. 콜라 2000원");
+        System.out.println("2. 사이다 2100원");
+        System.out.println("3. 제로콜라 2500원");
+        System.out.println("4. 환타 2300원");
+        System.out.print("음료 메뉴를 선택해주세요 : ");
 
         int c = sc.nextInt();
 
@@ -148,7 +148,7 @@ public class setView {
                 break;
 
             default:
-                System.out.println("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
 
         }
 
@@ -162,7 +162,7 @@ public class setView {
     public String setInformation (){
 
 
-        return "선택하신 메뉴는"+this.burgername+", "+this.drinkname+", "+this.sidename+"입니다.";
+        return "선택하신 메뉴는 [ 햄버거 = " + this.burgername+", 음료 = " + this.drinkname + ", 사이드 = " + this.sidename + " 입니다.";
 
     }
 

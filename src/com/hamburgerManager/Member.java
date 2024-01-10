@@ -24,8 +24,8 @@ public class Member {
 
     public void chooseListSingle() {
 
-        System.out.println("회원검증을 시작합니다.");
-        System.out.println("이름을 입력해주세요 ");
+        System.out.println("회원 검증을 시작합니다.");
+        System.out.print("이름을 입력해주세요 : ");
         String str = sc.nextLine();
         for (memberDTO marr : memberList){
 
@@ -37,7 +37,7 @@ public class Member {
             }
 
             if(marr.getName().equals(str)){
-                System.out.println("회원인증에 성공하였습니다.");
+                System.out.println("회원 인증에 성공하였습니다.");
                 payview.singleMemberPay();
                 return;
             }
@@ -53,8 +53,8 @@ public class Member {
 
     public void chooseListSet() {
 
-        System.out.println("회원검증을 시작합니다.");
-        System.out.println("이름을 입력해주세요 ");
+        System.out.println("회원 검증을 시작합니다.");
+        System.out.print("이름을 입력해주세요 : ");
         String str = sc.nextLine();
         for (memberDTO marr : memberList){
 
@@ -66,7 +66,7 @@ public class Member {
             }
 
             if(marr.getName().equals(str)){
-                System.out.println("회원인증에 성공하였습니다.");
+                System.out.println("회원 인증에 성공하였습니다.");
                 payview.setMemberPay();
                 return;
             }
