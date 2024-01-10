@@ -11,6 +11,8 @@ public class Controller {
    setView SETVIEW= new setView();
     burgerView BURGERVIEW = new burgerView();
 
+    Member member = new Member();
+
 
 
 
@@ -32,6 +34,10 @@ public class Controller {
                     SETVIEW.burgurviewset();
                     SETVIEW.drinkview();
                     SETVIEW.sideview();
+                    System.out.println(SETVIEW.setInformation());
+                    member.chooseListSet();
+
+
 
                     break;
                 case 9:
