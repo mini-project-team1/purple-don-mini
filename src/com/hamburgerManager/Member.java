@@ -95,6 +95,7 @@ public class Member {
         System.out.println(memberList[index].memberInformation());
 
         System.out.println(newName + "님, 회원 가입이 완료되었습니다.");
+        index++;
 
     }
 

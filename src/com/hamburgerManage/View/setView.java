@@ -18,7 +18,7 @@ public class setView {
         System.out.println("3. 새우버거 7000원");
         System.out.println("4. 핫크리스피버거 8000원");
         System.out.println("5. 한우버거 9000원");
-        System.out.print("햄버거를 선택해주세요 : ");
+        System.out.print("햄버거의 번호를 선택해주세요 : ");
         int c = sc.nextInt();
         sc.nextLine();
 
@@ -64,7 +64,7 @@ public class setView {
         System.out.println("3. 코울슬로 3800원");
         System.out.println("4. 웨지 포테이토 3400원");
         System.out.println("5. 오징어링 1500원");
-        System.out.print("사이드 메뉴를 선택해주세요 : ");
+        System.out.print("사이드 메뉴의 번호를 선택해주세요 : ");
         int c = sc.nextInt();
         sc.nextLine();
 
@@ -116,7 +116,7 @@ public class setView {
         System.out.println("2. 사이다 2100원");
         System.out.println("3. 제로콜라 2500원");
         System.out.println("4. 환타 2300원");
-        System.out.print("음료 메뉴를 선택해주세요 : ");
+        System.out.print("음료의 번호를 선택해주세요 : ");
 
         int c = sc.nextInt();
 

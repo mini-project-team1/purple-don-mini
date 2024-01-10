@@ -17,7 +17,7 @@ public class Controller {
 
 
     public void mainMenu() {
-        int c;
+        String c;
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("======롯데리아에 오신것을 환영합니다=======");
@@ -25,12 +25,12 @@ public class Controller {
             System.out.println(" 2. 세트메뉴 선택");
             System.out.println(" 9. 프로그램 종료");
             System.out.print("메뉴번호를 입력하세요 : ");
-            c = sc.nextInt();
+             c = sc.nextLine();
             switch (c) {
-                case 1:
+                case "1" :
                     BURGERVIEW.burgurview();
                     break;
-                case 2:
+                case "2" :
                     SETVIEW.burgurviewset();
                     SETVIEW.drinkview();
                     SETVIEW.sideview();
@@ -40,14 +40,14 @@ public class Controller {
 
 
                     break;
-                case 9:
+                case "9" :
                     System.out.println("프로그램 종료");
                     break;
                 default:
-                    System.out.print("다시 입력해주세요 : ");
+                    System.out.println("잘못된 번호를 입력하셨습니다, 처음으로 돌아갑니다");
             }
 
-        } while (c != 9);
+        } while (!c.equals("9"));
 
     }
 }
