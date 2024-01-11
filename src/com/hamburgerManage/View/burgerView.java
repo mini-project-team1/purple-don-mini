@@ -18,8 +18,6 @@ public class burgerView {
         System.out.print("햄버거의 번호를 선택해주세요 : ");
         String c = sc.nextLine();
 
-        sc.nextLine();
-
         switch (c){
 
             case "1" :
@@ -50,7 +48,8 @@ public class burgerView {
                 pay.BURGERNAME("한우버거",true);
                 break;
             default:
-                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 ");
+                System.out.println(); break;
 
         }
 

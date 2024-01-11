@@ -24,7 +24,7 @@ public class Controller {
             System.out.println(" 1. 🍔 햄버거 단품 선택");
             System.out.println(" 2. 🍔🍟🍹 세트 메뉴 선택");
             System.out.println(" 9. 프로그램 종료");
-            System.out.print("메뉴번호를 입력하세요 : ");
+            System.out.print("메뉴 번호를 입력하세요 : ");
              c = sc.nextLine();
             switch (c) {
                 case "1" :
