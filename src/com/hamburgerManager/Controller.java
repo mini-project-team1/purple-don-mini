@@ -20,11 +20,13 @@ public class Controller {
         String c;
         Scanner sc = new Scanner(System.in);
         do {
+            System.out.println("============================================");
             System.out.println("🍔🍟🍔🍟 롯데리아에 오신것을 환영합니다 🍔🍟🍔🍟");
-            System.out.println(" 1. 🍔 햄버거 단품 선택");
-            System.out.println(" 2. 🍔🍟🍹 세트 메뉴 선택");
-            System.out.println(" 9. 프로그램 종료");
-            System.out.print("메뉴 번호를 입력하세요 : ");
+            System.out.println(" ========= 1. 🍔 햄버거 단품 선택 🍔 =========");
+            System.out.println(" ========= 2. 🍟  세트 메뉴 선택  🍹 =========");
+            System.out.println(" ========= 9. ⛔  프로그램 종료   ⛔ =========");
+            System.out.println("============================================");
+            System.out.print("원하시는 메뉴 번호를 입력하세요 : ");
              c = sc.nextLine();
             switch (c) {
                 case "1" :
@@ -41,10 +43,10 @@ public class Controller {
 
                     break;
                 case "9" :
-                    System.out.println("프로그램 종료");
+                    System.out.println("⛔ 프로그램 종료 ⛔");
                     break;
                 default:
-                    System.out.println("잘못된 번호를 입력하셨습니다, 처음으로 돌아갑니다");
+                    System.out.println("❗ 잘못된 번호를 입력하셨습니다, 처음으로 돌아갑니다 ❗");
             }
 
         } while (!c.equals("9"));

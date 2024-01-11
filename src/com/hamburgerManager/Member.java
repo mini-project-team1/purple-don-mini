@@ -30,14 +30,16 @@ public class Member {
         for (memberDTO marr : memberList){
 
             if(marr==null){
-                System.out.println("일치하는 맴버가 없습니다.");
+                System.out.println("---------------------------");;
+                System.out.println("❗ 일치하는 맴버가 없습니다. ❗");
                 regist();
                 payview.singleMemberPay();
                 return;
             }
 
             if(marr.getName().equals(str)){
-                System.out.println("회원 인증에 성공하였습니다.");
+                System.out.println("-------------------------");;
+                System.out.println("회원 인증에 성공하였습니다. 😍");
                 payview.singleMemberPay();
                 return;
             }
@@ -52,20 +54,22 @@ public class Member {
     }
 
     public void chooseListSet() {
-
+        System.out.println("-------------------------");
         System.out.println("회원 검증을 시작합니다.");
         System.out.print("이름을 입력해주세요 : ");
         String str = sc.nextLine();
         for (memberDTO marr : memberList){
 
             if(marr==null){
-                System.out.println("일치하는 맴버가 없습니다.");
+                System.out.println("---------------------------");;
+                System.out.println("❗ 일치하는 맴버가 없습니다. ❗");
                 regist();
                 payview.setMemberPay();
                 return;
             }
 
             if(marr.getName().equals(str)){
+                System.out.println("-------------------------");
                 System.out.println("회원 인증에 성공하였습니다. 😍");
                 payview.setMemberPay();
                 return;
@@ -82,19 +86,21 @@ public class Member {
 
 
     public void regist() {
+        System.out.println("-------------------------");
+        System.out.println("-- 회원 가입을 진행합니다. --");
+        System.out.println("-------------------------");
 
-        System.out.println("회원 가입을 진행합니다.");
-
-        System.out.print("성함을 입력하세요 : ");
+        System.out.print(" 성함을 입력하세요 : ");
         String newName = sc.nextLine();
 
-        System.out.print("휴대폰 번호를 입력하세요 : ");
+        System.out.print(" 휴대폰 번호를 입력하세요 : ");
         String newPhone = sc.nextLine();
 
         memberList[index] = new memberDTO(newName, newPhone);
         System.out.println(memberList[index].memberInformation());
-
-        System.out.println(newName + "님, 회원 가입이 완료되었습니다. 🎶");
+        System.out.println("---------------------------------------");
+        System.out.println(newName + "님, 회원 가입이 완료되었습니다. 😎");
+        System.out.println("---------------------------------------");
         index++;
 
     }
