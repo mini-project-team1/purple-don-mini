@@ -59,6 +59,7 @@ public class setView {
             default:
                 System.out.print("알맞은 메뉴를 선택해주세요 ");
                 System.out.println();
+                burgurviewset();
                 break;
         }
 
@@ -116,6 +117,7 @@ public class setView {
                 System.out.print("알맞은 메뉴를 선택해주세요 ");
                 System.out.println("-------------------------");
                 System.out.println();
+                sideview();
                 break;
 
         }
@@ -172,6 +174,7 @@ public class setView {
             default:
                 System.out.print("알맞은 메뉴를 선택해주세요 ");
                 System.out.println();
+                drinkview();
                 break;
 
         }

@@ -54,8 +54,9 @@ public class burgerView {
                 pay.BURGERNAME("한우버거",true);
                 break;
             default:
-                System.out.print("알맞은 메뉴를 선택해주세요 ");
+                System.out.println("알맞은 메뉴를 선택해주세요 ");
                 System.out.println("-------------------------");
+                burgurview();
                 System.out.println(); break;
 
         }
