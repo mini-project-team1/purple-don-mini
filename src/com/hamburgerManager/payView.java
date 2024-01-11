@@ -9,6 +9,7 @@ public class payView {
         System.out.println("이벤트 쿠폰" + coupon + " % 쿠폰 할인 적용되어 총 금액은 " + ( price /100 *(100-coupon))  + "원 입니다.");
         price=0;
         System.out.println("최종 결제 완료되었습니다. 👌😁");
+        System.out.println("-------------------------");
     }
 
     public void setMemberPay(){
@@ -20,6 +21,7 @@ public class payView {
         System.out.println("총 금액은 " + (setFinalPay-1000)  + "원 입니다.");
         price=0;
         System.out.println("최종 결제 완료되었습니다. 👌😁");
+        System.out.println("-------------------------");
     }
 
 }
