@@ -83,7 +83,7 @@ public class Member {
 
     public void regist() {
 
-        System.out.println("회원가입을 진행합니다.");
+        System.out.println("회원 가입을 진행합니다.");
 
         System.out.print("성함을 입력하세요 : ");
         String newName = sc.nextLine();

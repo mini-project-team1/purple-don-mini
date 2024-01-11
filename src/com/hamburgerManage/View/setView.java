@@ -51,7 +51,9 @@ public class setView {
                 this.burgername = "한우 버거,";
                 break;
             default:
-                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 ");
+                System.out.println();
+                break;
         }
 
     }
@@ -99,7 +101,9 @@ public class setView {
                 this.sidename = "오징어링";
                 break;
             default:
-                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 ");
+                System.out.println();
+                break;
 
         }
 
@@ -148,7 +152,9 @@ public class setView {
                 break;
 
             default:
-                System.out.print("알맞은 메뉴를 선택해주세요 : "); break;
+                System.out.print("알맞은 메뉴를 선택해주세요 ");
+                System.out.println();
+                break;
 
         }
 
@@ -162,7 +168,7 @@ public class setView {
     public String setInformation (){
 
 
-        return "선택하신 메뉴는 [ 햄버거 = " + this.burgername+", 음료 = " + this.drinkname + ", 사이드 = " + this.sidename + " 입니다.";
+        return "선택하신 메뉴는 [ 햄버거 = " + this.burgername+", 음료 = " + this.drinkname + ", 사이드 = " + this.sidename + "] 입니다.";
 
     }
 
