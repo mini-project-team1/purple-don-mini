@@ -19,33 +19,33 @@ public class setView {
         System.out.println("4. 핫크리스피버거 8000원");
         System.out.println("5. 한우버거 9000원");
         System.out.print("햄버거의 번호를 선택해주세요 : ");
-        int c = sc.nextInt();
-        sc.nextLine();
+        String c = sc.nextLine();
+
 
         switch (c){
-            case 1 :
+            case "1" :
                 Pay.price += 5000;
                 System.out.println("치즈버거를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.burgername = "치즈버거";
 
                 break;
-            case 2 : Pay.price += 6000;
+            case "2" : Pay.price += 6000;
                 System.out.println("불고기버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.burgername = "불고기버거";
                 break;
-            case 3 : Pay.price += 7000;
+            case "3" : Pay.price += 7000;
                 System.out.println("새우버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.burgername = "새우버거";
                 break;
-            case 4 : Pay.price += 8000;
+            case "4" : Pay.price += 8000;
                 System.out.println("핫크리스피버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.burgername = "핫크리스피버거";
                 break;
-            case 5 : Pay.price += 9000;
+            case "5" : Pay.price += 9000;
                 System.out.println("한우버거");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.burgername = "한우 버거,";
@@ -67,35 +67,35 @@ public class setView {
         System.out.println("4. 웨지 포테이토 3400원");
         System.out.println("5. 오징어링 1500원");
         System.out.print("사이드 메뉴의 번호를 선택해주세요 : ");
-        int c = sc.nextInt();
-        sc.nextLine();
+        String c = sc.nextLine();
+
 
         switch (c){
 
-            case 1 :
+            case "1" :
                 Pay.price += 1300;
                 System.out.println("치즈스틱를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.sidename = "치즈스틱";
                 break;
 
-            case 2 : Pay.price += 3000;
+            case "2" : Pay.price += 3000;
                 System.out.println("양념감자를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.sidename = "양념감자";
                 break;
 
-            case 3 : Pay.price += 3800;
+            case "3" : Pay.price += 3800;
                 System.out.println("코울슬로를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.sidename = "코울슬로";
                 break;
-            case 4 : Pay.price += 3400;
+            case "4" : Pay.price += 3400;
                 System.out.println("웨지 포테이토를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.sidename = "웨지 포테이토";
                 break;
-            case 5 : Pay.price += 1500;
+            case "5" : Pay.price += 1500;
                 System.out.println("오징어링을 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.sidename = "오징어링";
@@ -122,30 +122,30 @@ public class setView {
         System.out.println("4. 환타 2300원");
         System.out.print("음료의 번호를 선택해주세요 : ");
 
-        int c = sc.nextInt();
+        String c = sc.nextLine();
 
-        sc.nextLine();
+
 
         switch (c){
 
-            case 1 :
+            case "1" :
                 Pay.price += 2000;
                 System.out.println("콜라를 선택하셨습니다.");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.drinkname = "콜라";
 
                 break;
-            case 2 : Pay.price += 2100;
+            case "2" : Pay.price += 2100;
                 System.out.println("사이다");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.drinkname = "사이다";
                 break;
-            case 3 : Pay.price += 2500;
+            case "3" : Pay.price += 2500;
                 System.out.println("제로콜라");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.drinkname = "제로콜라";
                 break;
-            case 4 : Pay.price += 2300;
+            case "4" : Pay.price += 2300;
                 System.out.println("환타");
                 System.out.println("현재 가격은 " + Pay.price + "원 입니다.");
                 this.drinkname = "환타";
