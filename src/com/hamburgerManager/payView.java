@@ -3,7 +3,6 @@ package com.hamburgerManager;
 import static com.hamburgerManager.Pay.price;
 
 public class payView {
-
     public void singleMemberPay(){
         int coupon =(int) (Math.random()*6 + 5);
         System.out.println("⭐ 1주년 오픈 이벤트로 5%~10% 회원쿠폰 적용되었습니다. ⭐");
