@@ -7,7 +7,6 @@ import java.util.Scanner;
 import static com.hamburgerManager.Pay.price;
 
 public class Member {
-
     payView payview = new payView();
     Scanner sc = new Scanner(System.in);
     memberDTO[] memberList = new memberDTO[30];
@@ -19,7 +18,6 @@ public class Member {
         memberList[3] = new memberDTO("우리조", "01099998888");
         memberList[4] = new memberDTO("박수쳐", "01012345678");
     }
-
     int index = 5;
 
     public void chooseListSingle() {
@@ -27,6 +25,7 @@ public class Member {
         System.out.println("회원 검증을 시작합니다.");
         System.out.print("이름을 입력해주세요 : ");
         String str = sc.nextLine();
+
         for (memberDTO marr : memberList){
 
             if(marr==null){
@@ -43,16 +42,8 @@ public class Member {
                 payview.singleMemberPay();
                 return;
             }
-
-
-
         }
-
-
-
-
     }
-
     public void chooseListSet() {
         System.out.println("-------------------------");
         System.out.println("회원 검증을 시작합니다.");
@@ -74,17 +65,8 @@ public class Member {
                 payview.setMemberPay();
                 return;
             }
-
-
-
         }
-
-
-
-
     }
-
-
     public void regist() {
         System.out.println("-------------------------");
         System.out.println("-- 회원 가입을 진행합니다. --");
@@ -102,9 +84,5 @@ public class Member {
         System.out.println(newName + "님, 회원 가입이 완료되었습니다. 😎");
         System.out.println("---------------------------------------");
         index++;
-
     }
-
-
-
 }
