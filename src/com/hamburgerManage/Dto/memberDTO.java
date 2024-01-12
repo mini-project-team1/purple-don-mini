@@ -1,7 +1,6 @@
 package com.hamburgerManage.Dto;
 
 public class memberDTO {
-
     private String name;    // 회원 이름
     private String phone;   // 휴대폰 번호
 
